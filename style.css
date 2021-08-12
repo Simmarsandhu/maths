@@ -1,0 +1,55 @@
+Body{
+    text-align:center;
+    background-image: url("math.jpg");
+    background-repeat: no-repeat;
+     background-size: 1400px 300px ;
+}
+#div_1{
+    background-color:white;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: smaller;
+    height: 40px;
+    width: 100%;
+    margin-top: 0;
+}
+#player1_login ,#player2_login{
+    margin-top: 30px;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin-left:100px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+    
+}
+#player1_login input,#player2_login input{
+    width: 450px;
+    margin-left:30px;
+}
+#player1_login  h3 ,#player2_login h3{
+        font-family: 'Style Script', cursive;
+        font-size: 50;
+}
+#player1_login h1 ,#player2_login h1{
+        font-family: 'Style Script', cursive;
+        font-size: 100;
+}
+#player1_login img ,#player2_login img{
+        width: 200px;
+        height: 150px;
+
+}
+#login{
+  margin-left:300px;
+  margin-top:50px;
+  height: 50px;
+  font-family: 'Style Script', cursive;
+  
+
+}
