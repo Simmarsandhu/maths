@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+<script src="game_login.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -21,16 +22,16 @@
     <div id="player1_login" class="col-xs-6">
        <h1>PLAYER 1 </h1> 
        <h3>Username:</h3>
-       <input type="text" class="form-control">
+       <input type="text" id="pl1"class="form-control">
        <img src="player1.png">
     </div>
     
         <div id="player2_login" class="col-xs-6"><h1>PLAYER 2 </h1> 
         <h3>Username:</h3>
-        <input type="text" class="form-control">
+        <input type="text" id="pl2" class="form-control">
         <img src="player1.png"></div>
 
-        <button id="login" class="col-lg-6" onclick="adduser()">LOGIN</button>
+        <button id="login" class="col-lg-6" onclick="addUser()">LOGIN</button>
  
 
 
