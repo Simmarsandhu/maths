@@ -25,8 +25,8 @@ document.getElementById("player_turn_answer").innerHTML = "answer turn - " + pla
      actual_answer=parseInt(number1)*parseInt(number2);
 
      question_number="<h4>"+number1+"X"+number2+"</h4>";
-     check_button="<br><Br><button class='btn btn-info' onclick='check()'>Check</button";
-     input_box="<br>Answer : <input type='type' id='input_check_box'>";
+     check_button="<br><Br><button class='btn btn-info' onclick='check()'>Check</button>";
+     input_box="<br>Answer : <input type='text' id='input_check_box'>";
      row= question_number+ input_box+check_button;
       
      
@@ -54,8 +54,11 @@ document.getElementById("player_turn_answer").innerHTML = "answer turn - " + pla
 
         if(answer_turn =="player1"){
             update_player1_score = player1_score + 1;
-            document.getElementById("player1_score").innerHTML=update_player1_score;
+            document.getElementById("score_1").innerHTML=update_player1_score;
             console.log(update_player1_score);
+            
+
+
             
             
 
@@ -66,19 +69,38 @@ document.getElementById("player_turn_answer").innerHTML = "answer turn - " + pla
             console.log(update_player2_score);
             
 
+            
+
         }
      }
      if(question_turn =="player1"){
-     question_turn="player2";
+     question_turn ="player2";
+
      document.getElementById("player_turn_question").innerHTML="Question Turn - " + player2;
      
     
     }
     else{
-        question_turn="player1"
+        question_turn ="player1"
         document.getElementById("player_turn_question").innerHTML="Question Turn - " +  player1;
         
         
  
     }
- }
+    if(answer_turn =="player1"){
+        answer_turn ="player2";
+   
+        document.getElementById("player_turn_answer").innerHTML="Answer Turn - " + player2;
+        
+       
+       }
+       else{
+           answer_turn ="player1"
+           document.getElementById("player_turn_answer").innerHTML="Answer Turn - " +  player1;
+           
+           
+        }
+       }
+    
+   
+
